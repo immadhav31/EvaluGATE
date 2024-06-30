@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #202021;
+}
+
+.mainNav {
+  display: flex;
+  align-items: center;
+}
+
+.mainNav a {
+  color: #34495e;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mainNav a:hover, .mainNav a.active {
+  color: #3498db;
+}
+
+.searchBar input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  width: 200px;
+  transition: width 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+.searchBar input:focus {
+  width: 250px;
+  outline: none;
+  border-color: #3498db;
+}
+
+.logoutBtn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #c0392b;
+}
+
+.contentArea {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quizGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.quizCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.quizCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quizImageContainer {
+  height: 150px;
+  overflow: hidden;
+}
+
+.quizCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.quizCard:hover img {
+  transform: scale(1.05);
+}
+
+.quizCard h3 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #34495e;
+  text-align: center;
+}
+
+.footer {
+  background-color: #34495e;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerNav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footerNav a:hover {
+  color: #3498db;
+}
