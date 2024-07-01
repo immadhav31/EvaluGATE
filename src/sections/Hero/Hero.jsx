@@ -67,7 +67,7 @@ function Hero() {
           <a href="#" className={styles.socialLink}>
             <img src={linkedin} alt="linkedin" />
           </a>
-          <a href="#" className={styles.socialLink}>
+          <a href="https://github.com/immadhav31/EvaluGATE" target="_blank" className={styles.socialLink}>
             <img src={github} alt="github" />
           </a>
         </div>
