@@ -11,7 +11,8 @@ const Admin = () => {
     { id: 1, title: 'S6 Linear Algebra Quiz', image: quizImage },
     { id: 2, title: 'S1 SVD Quiz', image: quizImage },
     { id: 3, title: 'S4 Robotics Quiz', image: quizImage },
-    { id: 4, title: 'S6 Probability', image: quizImage }
+    { id: 4, title: 'S6 Probability', image: quizImage },
+    { id: 5, title: 'S5 Data Structures', image: quizImage }
   ];
 
   const handleQuizClick = (quizId) => {
@@ -42,7 +43,7 @@ const Admin = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <button className={styles.logoutBtn}>Logout</button>
+          <button className={styles.logoutBtn} onClick={handleLoginClick}>Logout</button>
         </nav>
       </header>
       
