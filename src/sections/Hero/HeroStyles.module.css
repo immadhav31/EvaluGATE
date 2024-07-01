@@ -1,3 +1,10 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -171,6 +178,7 @@
   .brand {
     font-size: 1.25rem;
     font-weight: bold;
+    margin-right: 330px;
   }
   
   .topics {
@@ -187,7 +195,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    margin-right: 1040px;
+    margin-right: 1130px;
     position: absolute;
     margin-top: 40px;
   }
