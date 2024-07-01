@@ -84,12 +84,15 @@
 }
 
 .quizGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: flex-start;
 }
 
 .quizCard {
+  flex: 0 0 calc(25% - 2rem);
+  max-width: calc(25% - 2rem);
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
